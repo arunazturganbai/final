@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/jpeg;base64,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" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <audio id="audio" src="http://music.mp3"></audio>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title class="text-light">Cinematic spectrum</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container mt-2 mb-3">
+            <a class="navbar-brand" href="1movies.html">Cinematic spectrum</a>
+            <div id="movieList"></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="series.html">Series</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="anime.html">Anime</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Cartoons</a>
+                    </li>
+                </ul>
+                <div class="dropdown">
+                    <button class="dropbtn">Content
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                <div class="dropdown-content">
+                    <a href="#Questions">Questions</a>
+                    <a href="#Contacts">Contacts</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container text-light mt-3 mb-3">
+            <h1>
+                <i class="fa fa-film" style="font: size 36px;"></i>
+                On top 
+            </h1>
+        </div>
+        <div class="container mt-2 mb-2">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://www.themoviedb.org/t/p/original/u5kboZR4OMi4QdbOhawCZuzMVWJ.jpg" alt="Card image cap">
+                        <h5 class="card-title">Barbie</h5>
+                        <a href="https://kinogo.film/films/11763-barbi-2023-smotret-onlajn-besplatno.html" class="btn btn-dark">Watch</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://m.media-amazon.com/images/M/MV5BMjAyNDEyMzc4Ml5BMl5BanBnXkFtZTgwMjEzNjM0NTM@._V1_.jpg" alt="Card image cap">
+                        <h5 class="card-title">Gran Turismo  <span class="badge badge-secondary">New</span></h5>
+                        <a href="https://kinogo.biz/22987-8-podrug-oushena-2018-hd.html" class="btn btn-dark">Watch</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://m.media-amazon.com/images/I/613wRH0WUiL._AC_UF1000,1000_QL80_.jpg" alt="Card image cap">
+                        <h5 class="card-title">Suzume</h5>
+                        <a href="https://kinogo.media/37418-sudzumje-zakryvaet-dveri.html" class="btn btn-dark">Watch</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg" alt="Card image cap">
+                        <h5 class="card-title">Inception</h5>
+                        <a href="https://kinogo.film/films/91-po-soobrazheniyam-sovesti.html" class="btn btn-dark">Watch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg" alt="Card image cap">
+                        <h5 class="card-title">Forest Gamp</h5>
+                        <a href="https://kinogo.biz/19274-forrest-gamp.html" class="btn btn-dark">Watch</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://resizing.flixster.com/aX9Yz5sNV2WpBA5CoENzIl9RbTM=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vUlRUVjI2NTU1OS53ZWJw" alt="Card image cap">
+                        <h5 class="card-title">The Crown</h5>
+                        <a href="https://kinogo.fm/1147-korona-1-5-sezon.html" class="btn btn-dark">Watch</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/8/8a/Hacksaw_Ridge_poster.png" alt="Card image cap">
+                        <h5 class="card-title">Hacksaw Ridge</h5>
+                        <a href="https://kinogo.film/films/91-po-soobrazheniyam-sovesti.html" class="btn btn-dark">Watch</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://i.pinimg.com/736x/19/69/12/196912782cd51940d8485ad63b07e59f.jpg" alt="Card image cap">
+                        <h5 class="card-title">Ocean's 8</h5>
+                        <a href="https://kinogo.biz/68004-gran-turizmo.html" class="btn btn-dark">Watch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<hr>
+<hr>    
+<hr> 
+<hr>
+<hr> 
+<!--TAB-->
+<div class="container">
+    <h1 class="text-center">
+        Choose your favorite genre
+    </h1>
+    <div class="container text-light">
+        <div class="tab">
+            <button class="tablinks" onclick="openGenre(event, '1 Question')">Action</button>
+            <button class="tablinks" onclick="openGenre(event, '2 Question')">Comedy</button>
+            <button class="tablinks" onclick="openGenre(event, '3 Question')">Horror</button>
+            <button class="tablinks" onclick="openGenre(event, '4 Question')">Fantasy</button>
+            <button class="tablinks" onclick="openGenre(event, '5 Question')">Romance</button>
+          </div>
+          
+          <div id="1 Question" class="tabcontent">
+            <h2>Action</h2>
+            <p>Action film is a film genre in which the protagonist is thrust into a series of events that typically involve violence and physical feats.</p>
+            <div class="movie-poster" id="poster">
+                <img src="https://www.tasteofcinema.com/wp-content/uploads/2016/09/great-action-stars.jpg" alt="Movie Poster">
+            </div>
+          </div>
+          
+          <div id="2 Question" class="tabcontent">
+            <h2>Comedy</h2>
+            <p>A comedy film is a category of film which emphasizes on humor.</p>
+            <div class="movie-poster" id="poster">
+                <img src="https://www.osn.com/getattachment/watch/hot-topics/osn-blogs/May-2018/Laugh-out-loud-with-our-top-comedy-movies/ted.jpg.aspx" alt="Movie Poster">
+            </div>
+          </div>
+          
+          <div id="3 Question" class="tabcontent">
+            <h2>Horror</h2>
+            <p>Horror is a film genre that seeks to elicit fear or disgust in its audience for entertainment purposes.</p>
+            <div class="movie-poster" id="poster">
+                <img src="https://variety.com/wp-content/uploads/2017/09/it-movie-stephen-king.jpg?w=1000" alt="Movie Poster">
+            </div>
+          </div>
+
+          <div id="4 Question" class="tabcontent">
+            <h2>Fantasy</h2>
+            <p>Fantasy is a genre of speculative fiction involving magical elements, typically set in a fictional universe and usually inspired by mythology or folklore.</p>
+            <div class="movie-poster" id="poster">
+                <img src="https://clairepacker.files.wordpress.com/2010/12/avatar_pandora.jpg?w=580" alt="Movie Poster">
+            </div>
+          </div>
+
+          <div id="5 Question" class="tabcontent">
+            <h2>Romance</h2>
+            <p> This genre usually has a theme that explores an issue within love, including but not limited to: love at first sight, forbidden love, love triangles, and sacrificial love.</p>
+            <div class="movie-poster" id="poster">
+                <img src="https://i0.wp.com/closeupculture.com/wp-content/uploads/2019/10/la-la-land1-2688227709-1571782256135.jpg?fit=932%2C566&ssl=1" alt="Movie Poster">
+            </div>
+          </div>
+          
+          <script>function openGenre(evt, cityName) {
+            var i, tabcontent, tablinks;
+          
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+          
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+        
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+          </script>
+    </div>
+        
+</main>
+    <hr>
+    <!--CAROUSEL-->
+    <div class="container">
+        <div class="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://pbblogassets.s3.amazonaws.com/uploads/2020/04/01141054/titanic-cover.jpg" alt="Romance">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://www.syfy.com/sites/syfy/files/2019/05/john-wick-2017-image-3840x2400.jpg" alt="Action">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://static01.nyt.com/images/2023/01/24/arts/jung-e1/jung-e1-videoSixteenByNine3000.jpg" alt="Science fiction">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+<hr> 
+    </main>
+<hr>
+<!--ACCORDATION-->
+<div class="container">
+    <h1 class="text-center" id="Questions">Frequently Asked Questions</h1>
+    <button class="accordion" onclick='play()'>Is it free to use your streaming website?</button>
+    <div class="panel">
+      <p>Yes, our streaming website is completely free to use.</p>
+    </div>
+    
+    <button class="accordion" onclick='play()'>Do I need to create an account to watch movies and series?</button>
+    <div class="panel">
+      <p>No, you can watch movies and series without creating an account.</p>
+    </div>
+    
+    <button class="accordion" onclick='play()'>How often do you update your movie and series collection?</button>
+    <div class="panel">
+      <p>We update our collection regularly with new content.</p>
+    </div>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+    
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+<hr>
+<hr>
+<!--FORM SUBMISSION-->
+<div class="container mt-4 mb-4 text-light">
+    <h4 class="text-left">
+        Ready to watch? Enter your email to create or restart your membership.
+        <img id="jumping-image" src="email.png" alt="Email" class="jumping" style="width: 50px; height: 50px;">
+    </h4>
+    <form id="myForm">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <p id="emailError" class="error"></p>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <p id="passwordError" class="error"></p>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <hr>
+        <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+</div>
+    <script>
+        const form = document.getElementById("myForm");
+        const emailInput = document.getElementById("exampleInputEmail1");
+        const passwordInput = document.getElementById("exampleInputPassword1");
+        const emailError = document.getElementById("emailError");
+        const passwordError = document.getElementById("passwordError");
+
+        form.addEventListener("submit", function (e) {
+            let valid = true;
+
+            // Clear previous error messages
+            emailError.textContent = "";
+            passwordError.textContent = "";
+
+            // Validate email
+            if (emailInput.value.trim() === "") {
+                emailError.textContent = "Email is required";
+                valid = false;
+            } else if (!isValidEmail(emailInput.value)) {
+                emailError.textContent = "Invalid email format";
+                valid = false;
+            }
+
+            // Validate password
+            if (passwordInput.value.trim() === "") {
+                passwordError.textContent = "Password is required";
+                valid = false;
+            }
+
+            if (!valid) {
+                e.preventDefault(); // Prevent form submission
+            }
+        });
+
+        // Function to validate email using regular expression
+        function isValidEmail(email) {
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return emailPattern.test(email);
+        }
+    </script>
+    </div>
+    <hr>
+<div class="container text-white text-center">
+    <h1>Guess the genre of the scene</h1>
+    <p>Drag the picture, which is a scene from the movie, to the cell whose genre you think this movie is.</p>
+    <div class="genre-box">
+        <div class="genre-cell" id="genre1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h5 style="margin-top:5px;">Action</h5></div>
+        <div class="genre-cell" id="genre2" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h5 style="margin-top:5px;">Comedy</h5></div>
+        <div class="genre-cell" id="genre3" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h5 style="margin-top:5px;">Romance</h5></div>
+    </div>
+    
+    <div class="image-box">
+        <img src="https://www.cleveland.com/resizer/sEd2ZOkaBSPVwVFha06F9HeRPlo=/770x578/smart/advancelocal-adapter-image-uploads.s3.amazonaws.com/expo.advance.net/img/544bef1618/width2048/102_thematrix1852645.jpeg" width="275" height="225" draggable="true" ondragstart="drag(event)" id="image1" data-genre="Action">
+        <img src="https://imgb.srgcdn.com/yxxw83BQ7hQYvtDPeHRp.jpg" width="300" height="225" draggable="true" ondragstart="drag(event)" id="image2" data-genre="Comedy">
+        <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/3/2021/02/10205350/778676_550991864920279_871179707_o.jpg" width="275" height="225" draggable="true" ondragstart="drag(event)" id="image3" data-genre="Drama">
+    </div>
+    
+    <button onclick="checkGenres()" class="proverka-btn">Check</button>
+    <p id="result"></p>
+</div>
+<hr>
+<hr>
+        <footer class="footer bg-dark text-white py-3"> 
+            <div class="container" id="Contacts"> 
+                <h5>Contacts</h5> 
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-group-item-dark">Instagram: cinematic_spectrum</li>
+                    <li class="list-group-item list-group-item-dark">Facebook: Cinematic Spectrum</li>
+                    <li class="list-group-item list-group-item-dark">Phone: 222 333 444</li>
+                    <li class="list-group-item list-group-item-dark">Email: cinematic_spectrum@email.com</li>
+                  </ul>
+                  <p>&copy; 2023 Cinematic Spectrum.</p> 
+            </div> 
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>
